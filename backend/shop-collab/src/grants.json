@@ -1,0 +1,170 @@
+[
+  {
+    "role": "list_member",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "ShoppingList",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "ShoppingList",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "ShoppingList",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "ShoppingList",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "ShoppingList",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "ShoppingList",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "ShoppingList",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "ShoppingList",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "Invitation",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "Invitation",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "Invitation",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "Invitation",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "Invitation",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "Invitation",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "Invitation",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "Invitation",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_member",
+    "resource": "Invitation",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "list_owner",
+    "resource": "Invitation",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]

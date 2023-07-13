@@ -1,0 +1,43 @@
+datasource postgres {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt         DateTime      @default(now())
+  firstName         String?
+  id                String        @id @default(cuid())
+  invitor           Invitation?   @relation(name: "byOwner")
+  memberInvitations Invitation?   @relation(name: "Invited_User")
+  password          String
+  roles             Json
+  shoppingLists     ShoppingList?
+  updatedAt         DateTime      @updatedAt
+  username          String        @unique
+}
+
+model ShoppingList {
+  createdAt   DateTime @default(now())
+  id          String   @id @default(cuid())
+  memberItems Json?
+  owner       User     @relation(fields: [ID], references: [id])
+  ID          String   @unique
+  ownerItems  Json?
+  updatedAt   DateTime @updatedAt
+}
+
+model Invitation {
+  byOwner            User?    @relation(name: "byOwner", fields: [ID], references: [id])
+  ID                 String?  @unique
+  createdAt          DateTime @default(now())
+  email              String?
+  id                 String   @id @default(cuid())
+  invitationAccepted Boolean
+  Invited_User       User     @relation(name: "Invited_User", fields: [ID], references: [id])
+  ID                 String   @unique
+  updatedAt          DateTime @updatedAt
+}
